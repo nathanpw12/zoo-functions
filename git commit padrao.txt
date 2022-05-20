@@ -1,0 +1,1 @@
+git commit -m "Requisito 1: Aprovado Localmente"
