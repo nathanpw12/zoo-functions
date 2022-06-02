@@ -2,9 +2,11 @@ const { species } = require('../data/zoo_data');
 
 const getElephants = () =>
   species.find((specie) => specie.name === 'elephants');
+// acha o objeto dos elefantes
 
 const averageAge = ({ residents }) =>
   residents.reduce((sum, elephant) => sum + elephant.age, 0) / residents.length;
+// traz a media de idade dos elefantes
 
 const computeData = (param, elephants) => {
   switch (param) {
@@ -32,5 +34,9 @@ const handlerElephants = (param) => {
   }
   return computeData(param, elephants);
 };
+
+const a = handlerElephants('availability');
+
+console.log(a);
 
 module.exports = handlerElephants;
